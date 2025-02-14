@@ -52,19 +52,27 @@
     }
 
     .poppins-regular {
-      font-family: "Poppins", serif;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
       font-weight: 400;
       font-style: normal;
     }
 
     .poppins-medium {
-      font-family: "Poppins", serif;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
       font-weight: 500;
       font-style: normal;
     }
 
+    .dark-mode .emailHero {
+      background-color: #fde500;
+    }
+
+    .na_nameBrand {
+
+    }
 
     img {
+      max-width: 100%;
       border: 0;
     }
 
@@ -94,7 +102,13 @@
         display: inline-block;
     }
     .column-one-half {
-        max-width: 300px;
+        max-width: 368px;
+    }
+    .column-one-third {
+        max-width: 200px;
+    }
+    .column-two-third {
+        max-width: 400px !important;
     }
     .padding {
         padding: 20px;
@@ -174,7 +188,8 @@
       .recipeBanner {
         padding-left: 15px !important;
       }
-      .column-one-half {
+      .column-two-third,
+      .column-one-third {
       	max-width: 600px !important;
         margin: 0 !important;
       }
@@ -189,9 +204,9 @@
         max-width: 100% !important;
         width: 100% !important;
       }
-      .column.column-two-third {
+      /* .column.column-two-third {
         margin-bottom: 20px !important;
-      }
+      } */
       .siteBranding {
         width: 100% !important;
         padding: 0 20px 0 10px !important;
@@ -229,6 +244,9 @@
       p.productDescription {
         color: #fafafa !important;
       }
+      td.emailHero {
+      	background-color: #FDE500 !important;
+      }
       hr {
         border: 1px solid #fafafa !important; 
         color: #fafafa !important;
@@ -262,7 +280,7 @@
   <![endif]-->
 
 </head>
-<body class="body" id="body" xml:lang="eng" style="margin: 0; padding: 40px 0; min-width: 100%;">
+<body class="body dark-mode" id="body" xml:lang="eng" style="margin: 0; padding: 40px 0; min-width: 100%;">
 
   		<!--[if (gte mso 9)|(IE)]>
 			<style type="text/css">
@@ -274,12 +292,13 @@
     
 
 
-  <center style="width:100%;table-layout:fixed; padding-bottom:40px;">
+  <center style="width:100%; table-layout:fixed; padding-bottom:40px;">
+
     <div style="max-width: 600px; background-color: #fafafa;; color: #3d3d3d; font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin: 0 auto;">
 
       
       <div style="font-size: 0; color: #fafafa;; mso-line-height-rule: exactly; line-height: 0; display: none; max-width: 0; max-height: 0; opacity: 0; overflow: hidden; mso-hide: all;">
-        Keep an eye out for Something Big Coming Soon!
+        Just value, quality products. Now in Store . . .
         &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
       </div>
       
@@ -295,30 +314,40 @@
         <tr>
           <td style="padding: 0;">
 
-              <!--[if mso]>
-                <table width="600" align="center" style="border-spacing: 0;" role="presentation">
-                  <tr>
-                    <td width="600" valign="top" style="padding: 0;"
-              <![endif]-->
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
 
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                <tr>
-                  <td class="emailDate" style="text-align: center; background-color: #005cab; padding: 15px 10px 10px;">
-                    <img src="img/northernNorthMart-rev_575x90.png" alt="Northern/NorthMart logo" title="Northern/NorthMart logo" width="350" border="0" style="width: 100%; max-width: 350px;">
-                  </td>
-                </tr>
-              </table>
+              <tr>
+                <td style="padding: 0;">
 
-              <!--[if mso]>
+                    <!--[if mso]>
+                      <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                          <td width="600" valign="top" style="padding: 0;"
+                    <![endif]-->
+
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+                      <tr>
+                        <td style="text-align: center; background-color: #005cab; padding: 16px 10px 12px;">
+                          <img src="img/northernNorthMart-rev_575x90.png" alt="Northern/NorthMart logo" title="Northern/NorthMart logo" width="350" border="0" style="width: 100%; max-width: 350px;">
+                        </td>
+                      </tr>
+
+                    </table>
+
+                    <!--[if mso]>
+                      </td>
+                      </tr>
+                      </table>
+                    <![endif]-->
+
                 </td>
-                </tr>
-                </table>
-              <![endif]-->
+              </tr> 
+
+            </table>
 
           </td>
-        </tr> 
-
-
+        </tr>
 
         <tr>
           <td style="padding: 0;">
@@ -328,68 +357,125 @@
                 <tr>
                   <td width="600" valign="top" style="padding: 0;"
             <![endif]-->
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 0;" role="presentation">
+
+              <tr>
+                <td>
+
+                  <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0;padding-bottom: 30px;" role="presentation">
+                      <tr>
+                        <td width="600" style="padding: 0 20px;">
+                  <![endif]-->
+
+                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+                    <tr>
+                      <td class="na_nameBrand" style="padding-left: 32px; top: 0; background-color: #fde500;">
+                        <img src="img/no-name_brand_150x41.png" alt="no-name brand logo" width="150">
+                      </td>
+                    </tr>
+
+                  </table>
+
+                  <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                      </tr>
+                    </table>
+                  <![endif]-->
+                </td>
+              </tr>
+
+            </table>
+
+            <!--[if mso]>
+                  </td>
+                </tr>
+              </table>
+            <![endif]-->
+
+          </td>
+        </tr>
+
+        <tr bgcolor="#fde500">
+          <td class="top-row-items" style="padding: 0; margin: 0; display: block;">
+
+            <!--[if mso]>
+              <table width="100%" align="center" style="border-spacing: 0; bgcolor: #fde500;" role="presentation">
+                <tr>
+                  <td width="100%" valign="top" style="padding: 0;"
+            <![endif]-->
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+              <tr bgcolor="#fde500">
+                <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left; background-color: #FDE500;">
+
+                  <table class="column column-two-third" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0; background-color: #fde500;" role="presentation">
+
+                    <tr>
+                      <td style="width: 600px; padding: 20px 10px 20px 32px; background-color: #fde500;">
+
+                        <h1 style="font-family: Helvetica, Arial, sans-serif; font-weight: 700; text-transform: lowercase; color: #000000; font-size: 48px; line-height: 1.1; letter-spacing: -1px;">just value, <br/>quality products</h1>
+                        <h2 style="font-family: Helvetica, Arial, sans-serif; font-weight: 700; text-transform: lowercase; color: #000000 !important; font-size: 32px; line-height: 1.5;">now in store . . .</h2>
+                      </td>
+                    </tr>
+
+                  </table>
+
+
+                  <table class="column column-one-third" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0; background-color: #FDE500;" role="presentation">
+
+                    <tr>
+                      <td style="width: 600px; padding: 0; background-color: #fde500;">
+                        <img src="img/no-name_basket_600x500.png" alt="Product alt text" style="margin-bottom: 15px; width: 100%;" title="Product Title text" width="200">
+                      </td>
+                    </tr>
+                        
+                  </table>
+
+                </td>
+              </tr>
+
+            </table>
+
+
+            <!--[if mso]>
+                  </td>
+                </tr>
+              </table>
+            <![endif]-->
+
+          </td>
+
           
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 0 0 32px 0;" role="presentation">
+
+
+        </tr>
+
+        <tr>
+          <td>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
               <tr>
-                <td class="na_nameBrand" style="padding-left: 32px; top: 0; background-color: #fde500;">
-                  <img src="img/no-name_brand_150x41.png" alt="no-name brand logo" width="150">
-                </td>
-              </tr>
-              <tr>
-                <td class="emailHero" style="text-align: left; background-color: #FDE500; padding: 20px 0 40px 32px;">
-                  <h1 style="font-family: Helvetica, Arial, sans-serif; font-weight: 700; text-transform: lowercase; color: #000000; font-size: 48px; line-height: 1.1; letter-spacing: -1px;">just value, <br/>quality products</h1>
-                  <h2 style="font-family: Helvetica, Arial, sans-serif; font-weight: 700; text-transform: lowercase; color: #000000 !important; font-size: 32px; line-height: 1.5;">now in store . . .</h2>
-                </td>
-              </tr>
-              <tr>
-                <td class="na_nameBrand" style="top: 0; background-color: #E1251B; padding: 16px 0 16px 32px;">
+                <td class="na_nameBrand" style="top: 0; background-color: #E1251B; padding: 16px 0 0 32px;">
                   <img src="img/pc_brand_195x64.png" alt="no-name brand logo" width="195">
                 </td>
               </tr>
 
               <tr>
-                <td>
-                  <h2 class="poppins-medium" style="font-size: 45px; color: #ffffff; background-color: #E1251B; padding: 16px 0 16px 32px;">Must-try PC® Picks</h2>
+                <td class="na_nameBrand" style="top: 0; background-color: #E1251B; padding: 0 0 16px 32px;">
+                  <h2 class="poppins-medium" style="font-size: 45px; color: #fafafa; background-color: #E1251B;">Must-try PC® Picks</h2>
                 </td>
               </tr>
+
             </table>
-
-            <!--[if mso]>
-              </td>
-              </tr>
-              </table>
-            <![endif]-->
-
           </td>
         </tr>
 
 
-        <tr>
-          <td style="margin: 30px 20px 0 30px !important;">
-
-            <!--[if mso]>
-              <table width="560" align="center" style="border-spacing: 0;" role="presentation">
-                <tr>
-                  <td width="560" valign="top" style="padding: 0;;"
-            <![endif]-->
-
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" cellspacing="0" style="border-spacing: 0;" role="presentation">
-              <tr>
-                <td style="padding: 30px 20px 0 30px;">
-                  <hr style="border: 1px solid #005cab; color: #005cab; margin: 0;">
-                </td>
-              </tr>
-            </table>
-
-            <!--[if mso]>
-              </td>
-              </tr>
-              </table>
-            <![endif]-->
-
-          </td>
-        </tr>
-        
 
         <tr>
           <td style="margin: 30px 20px 30px 20px !important;">
@@ -418,8 +504,6 @@
 
           </td>
         </tr>
-        
-
         
         <tr>
           <td>
@@ -572,13 +656,12 @@
 
           </td>
         </tr>
-        
 
       </table>
       
       <!--[if mso]>
-        </td>
-        </tr>
+            </td>
+          </tr>
         </table>
       <![endif]-->
 
